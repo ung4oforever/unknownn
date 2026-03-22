@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ldgaf</title>
+    <link rel="icon" type="image/x-icon" href="portada.jpg">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+
+    <div id="entry-screen" onclick="enterSite()">
+        <span class="enter-text">click nigger</span>
+    </div>
+
+    <video autoplay muted loop id="video-bg">
+        <source src="fondo/bg.mp4" type="video/mp4">
+    </video>
+
+    <div id="main-content">
+        
+  <div class="main-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            <img src="imagenes/avatar.gif" class="profile-img">
+            <h2 class="username">朱</h2>
+            <p class="tag">@ixo5</p>
+
+
+            <div class="badges">
+                <img class="badge" src="insignias/1.png" title="Badge 1">
+                <img class="badge" src="insignias/2.png" title="Badge 2">
+                <img class="badge" src="insignias/3.png" title="Badge 3">
+                <img class="badge" src="insignias/4.png" title="Badge 4">
+                <img class="badge" src="insignias/5.png" title="Badge 5">
+                <img class="badge" src="insignias/6.png" title="Badge 6">
+                <img class="badge" src="insignias/7.png" title="Badge 7">
+                <img class="badge" src="insignias/8.png" title="Badge 8">
+            </div>
+
+            <div class="social-bar">
+                <a href="https://discord.gg/kxi" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://discord.gg/kxi" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.gg/kxi" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://discord.gg/kxi" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://discord.gg/kxi" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        </div>
+        <div class="status-card-artificial" data-tilt>
+            <div class="status-layout">
+                <div class="avatar-wrapper">
+                    <img src="imagenes/avatar.jpg" class="mini-avatar">
+                    <div class="status-indicator dnd"></div> </div>
+                <div class="info-artificial">
+                    <div class="top-row">
+                        <span class="user-name-alt">朱</span>
+                        <span class="system-tag">999+ pings</span>
+                    </div>
+                    <div class="listening-box">
+                        <i class="fas fa-headphones-alt"></i>
+                        <marquee scrollamount="3">Yan Block - 3 Doritos</marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="server-card" data-tilt>
+    <div class="server-content">
+        <img src="imagenes/server.gif" class="server-img-icon" alt="Server Icon"> 
+        
+        <div class="server-text">
+            <h3>lone;👺</h3>
+            <div class="server-stats">
+                <span class="stat-item">
+                    <div class="stat-dot online-dot"></div>
+                    <span id="server-online">459</span> Online
+                </span>
+                <span class="stat-item">
+                    <div class="stat-dot total-dot"></div>
+                    <span id="server-total">2,669</span> Miembros
+                </span>
+            </div>
+        </div>
+        <a href="https://discord.gg/kxi" class="join-btn">Unirse</a>
+    </div>
+</div>
+
+<div class="music-card" data-tilt>
+    <div class="music-header">
+        <div class="disc-container">
+            <img src="imagenes/portada.jpg" id="music-logo" class="song-cover" alt="Cover">
+        </div>
+        <div class="song-info">
+            <h3 id="song-title">3 Doritos</h3>
+            <p id="song-artist">Yan Block</p>
+        </div>
+    </div>
+
+    <div class="progress-area">
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+        <div class="time-labels">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+    </div>
+
+    <div class="music-controls">
+        <button onclick="prevSong()"><i class="fas fa-step-backward"></i></button>
+        <button onclick="togglePlay()" id="play-pause"><i class="fas fa-play"></i></button>
+        <button onclick="nextSong()"><i class="fas fa-step-forward"></i></button>
+    </div>
+
+    <div class="volume-slider-container">
+        <i class="fas fa-volume-down" style="font-size: 0.7rem;"></i>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+        <i class="fas fa-volume-up" style="font-size: 0.7rem;"></i>
+    </div>
+</div>
+
+<audio id="music-player" loop>
+    <source src="musica/music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/index.js"></script>
+</body>
+</html>
